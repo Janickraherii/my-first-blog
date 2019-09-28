@@ -1,0 +1,19 @@
+<html>
+  {% load static %}
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <title>NY MALAGASY Artisanal Style</title>
+    </head>
+        <img src="{% static 'images/NY.png'%}" width="250" height="200"alt="Notre logo">
+        <div>
+            <h1><a href="/"> NY Malagasy Artisanal Soap.</a></h1>
+        </div>
+{% for post in posts %}
+        <div>
+           {{post}}
+        </div>
+        {% endfor %}
+    </body>
+</html>
